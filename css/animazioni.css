@@ -45,3 +45,69 @@
 .ex-5-square{
     transition: 2s;
 }
+
+/* ES. 6 */
+.ex-6-img:hover{
+    filter: grayscale(1);
+}
+
+/* ES. 7 */
+.ex-7-img:hover {
+    filter:blur(5px) grayscale(1) ;
+}
+
+.ex-7-img{
+    transition: 2s;
+}
+
+/* ES. 8 */
+.ex-8-img:hover{
+    border-radius: 10px;
+    filter: brightness(4) blur(2px);
+}
+
+.ex-8-img{
+    transition: 2s;
+}
+
+/* ES. 9 */
+.ex-9-img:hover {
+    border-radius: 10px;
+    filter: brightness(4) sepia(0.5);
+    transform: scale(0.5);
+}
+
+.ex-9-img {
+    transition: 2s;
+}
+
+/* ES. 10 */
+.ex-10-icon{
+    animation: charge 2s linear infinite;
+}
+
+@keyframes charge {
+    0% {
+        transform: rotate(3turn);
+    }
+    
+}
+
+/* ES. 11 */
+.ex-11-icon:hover {
+    animation: charge 2s linear;
+}
+
+@keyframes charge {
+    0% {
+        transform: rotate(0);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+
+}
